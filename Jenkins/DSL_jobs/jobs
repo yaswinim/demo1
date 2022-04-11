@@ -8,11 +8,11 @@ job('maven_dsl') {
 
     steps {
         maven {
-            mavenInstallation('maven')
+            mavenInstallation('maven-3.8.4')
             goals('-B -DskipTests clean package')
         }
         maven {
-            mavenInstallation('maven')
+            mavenInstallation('maven-3.8.4')
             goals('test')
         }
         shell('''
