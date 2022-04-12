@@ -4,7 +4,7 @@ pipeline {
         stage('Timeout') {
             steps {
                 retry(3) {
-                    sh 'I am not going to work :c'
+                    echo 'I am not going to work :c'
                 }
             }
         }
